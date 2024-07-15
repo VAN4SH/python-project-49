@@ -1,0 +1,6 @@
+.python-version
+/dist
+__pycache__
+*.egg-info
+*.pyc
+.vscode
