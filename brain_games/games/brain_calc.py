@@ -1,6 +1,7 @@
 import prompt
 import random
 
+
 def generate_question():
     num1 = random.randint(1,100)
     num2 = random.randint(1,100)
@@ -9,11 +10,11 @@ def generate_question():
     correct_answer = str(eval(question))
     return question, correct_answer
 
-def brain_calc():
+def brain_calc():  
+    print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name?")
     print(f"Hello, {name}!")
     print("What is the result of the expression?")
-
     correct_answers_count = 0
     attempts = 3
 
