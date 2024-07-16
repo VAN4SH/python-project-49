@@ -15,7 +15,6 @@ def brain_progression():
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
-
     for _ in range(3):  # Количество вопросов
         progression, correct_answer = generate_progression()
         print("What number is missing in the progression?")
