@@ -9,6 +9,7 @@ packages = [ {include = "brain_games" } ]
 python = "^3.10"
 prompt = "^0.4.1"
 flake8 = "^7.1.0"
+black = "^24.4.2"
 
 [tool.poetry.dev-dependencies]
 

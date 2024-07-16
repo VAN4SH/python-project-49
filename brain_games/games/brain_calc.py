@@ -5,13 +5,13 @@ import random
 def generate_question():
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
-    operation = random.choice(['+', '-', '*'])
+    operation = random.choice(["+", "-", "*"])
     question = f"{num1} {operation} {num2}"
     correct_answer = str(eval(question))
     return question, correct_answer
 
 
-def brain_calc():  
+def brain_calc():
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name?")
     print(f"Hello, {name}!")
@@ -28,7 +28,10 @@ def brain_calc():
             print("Correct!")
             correct_answers_count += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(
+                f"'{user_answer}' is wrong answer ;(."
+                f" Correct answer was '{correct_answer}'."
+            )
             print(f"Let's try again, {name}!")
             break
 

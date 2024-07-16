@@ -17,7 +17,9 @@ def brain_even():
         print("Question:", number)
         answer = input("Your answer: ")
 
-        if (answer == "yes" and is_even(number)) or (answer == "no" and not is_even(number)):
+        if (answer == "yes" and is_even(number)) or (
+            answer == "no" and not is_even(number)
+        ):
             print("Correct!")
             correct_answers += 1
         else:
@@ -25,7 +27,11 @@ def brain_even():
                 correct_answer = "yes"
             else:
                 correct_answer = "no"
-            print("'{}' is wrong answer ;(. Correct answer was '{}'.".format(answer, correct_answer))
+            message = (
+                "'{}' is wrong answer ;(. "
+                "Correct answer was '{}'.".format(answer, correct_answer)
+            )
+            print(message)
             print("Let's try again, {}!".format(name))
             return
     print("Congratulations, {}!".format(name))
