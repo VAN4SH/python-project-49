@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
+
+
 from brain_games.games.brain_progression import brain_progression
 
 def main():
