@@ -1,6 +1,7 @@
 import random
 import prompt
 
+
 def generate_progression():
     start = random.randint(1, 10)
     diff = random.randint(1, 10)
@@ -10,6 +11,7 @@ def generate_progression():
     correct_answer = progression[hidden_index]
     progression[hidden_index] = '..'
     return progression, str(correct_answer)
+
 
 def brain_progression():
     print("Welcome to the Brain Games!")
@@ -29,5 +31,3 @@ def brain_progression():
             break
     else:
         print(f"Congratulations, {name}!")
-
-

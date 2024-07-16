@@ -5,6 +5,7 @@ import random
 def is_even(number):
     return number % 2 == 0
 
+
 def brain_even():
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name?")
@@ -12,7 +13,7 @@ def brain_even():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     correct_answers = 0
     while correct_answers < 3:
-        number = random.randint(1,20)
+        number = random.randint(1, 20)
         print("Question:", number)
         answer = input("Your answer: ")
 

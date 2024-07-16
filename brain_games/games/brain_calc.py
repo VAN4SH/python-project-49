@@ -2,14 +2,14 @@ import prompt
 import random
 
 
-
 def generate_question():
-    num1 = random.randint(1,100)
-    num2 = random.randint(1,100)
-    operation = random.choice(['+','-','*'])
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1, 100)
+    operation = random.choice(['+', '-', '*'])
     question = f"{num1} {operation} {num2}"
     correct_answer = str(eval(question))
     return question, correct_answer
+
 
 def brain_calc():  
     print("Welcome to the Brain Games!")

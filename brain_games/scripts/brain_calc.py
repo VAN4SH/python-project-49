@@ -4,10 +4,10 @@
 
 from brain_games.games.brain_calc import brain_calc
 
+
 def main():
     """Run game."""
-    brain_calc()
-    
+    brain_calc()   
 
 
 if __name__ == '__main__':

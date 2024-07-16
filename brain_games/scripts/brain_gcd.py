@@ -4,10 +4,10 @@
 
 from brain_games.games.brain_gcd import brain_gcd
 
+
 def main():
     """Run game."""
-    brain_gcd()
-    
+    brain_gcd()    
 
 
 if __name__ == '__main__':

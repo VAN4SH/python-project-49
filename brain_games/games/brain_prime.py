@@ -10,6 +10,7 @@ def is_prime(number):
             return False
     return True
 
+
 def brain_prime():
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
