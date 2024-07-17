@@ -2,12 +2,13 @@
 # -*- coding:utf-8 -*-
 
 
-from brain_games.games.brain_prime import brain_prime
+from brain_games.games.engine import play
+from brain_games.games import brain_prime
 
 
 def main():
     """Run game."""
-    brain_prime()
+    play(brain_prime)
 
 
 if __name__ == "__main__":

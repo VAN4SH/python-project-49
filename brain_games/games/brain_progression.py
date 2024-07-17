@@ -1,36 +1,38 @@
 import random
-import prompt
 
 
-def generate_progression():
-    start = random.randint(1, 10)
-    diff = random.randint(1, 10)
+TASK = 'What number is missing in the progression?'
+
+
+def progression_handler(progression):
+    indexes = len(progression) - 1
+    index = random.randint(0, indexes)
+    correct_answer = progression[index]
+    progression[index] = '..'
+    return correct_answer, progression
+
+
+def generate_question():
     length = random.randint(5, 10)
-    progression = [start + i * diff for i in range(length)]
-    hidden_index = random.randint(0, len(progression) - 1)
-    correct_answer = progression[hidden_index]
-    progression[hidden_index] = ".."
-    return progression, str(correct_answer)
+    start = random.randint(0, 50)
+    step = random.randint(1, 10)
+    stop = length * step + start
+
+    li = []
+
+    for i in range(start, stop, step):
+        li.append(str(i))
+
+    expression = progression_handler(li)
+    return expression
 
 
-def brain_progression():
-    print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name? ")
-    print(f"Hello, {name}!")
-    for _ in range(3):  # Количество вопросов
-        progression, correct_answer = generate_progression()
-        print("What number is missing in the progression?")
-        print("Question:", " ".join(map(str, progression)))
-        user_answer = input("Your answer: ")
+def ask_question(expression):
+    correct_answer, progression = expression
+    progression = ' '.join(progression)
+    print(f'Question: {progression}')
 
-        if user_answer == correct_answer:
-            print("Correct!")
-        else:
-            print(
-                f"'{user_answer}' is wrong answer ;(. "
-                f"Correct answer was '{correct_answer}'."
-            )
-            print(f"Let's try again, {name}!")
-            break
-    else:
-        print(f"Congratulations, {name}!")
+
+def solve(expression):
+    correct_answer, progression = expression
+    return correct_answer
