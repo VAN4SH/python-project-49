@@ -15,7 +15,7 @@
 #### Запуск игры
 ```brain-even```
 
-[![asciicast](https://asciinema.org/a/0ReBkgLNikPn6h6QSvCtmmZ32.svg)](https://asciinema.org/a/0ReBkgLNikPn6h6QSvCtmmZ32)
+[![asciicast](https://asciinema.org/a/uf1ak1jM2YwCFA6rdHic4OmXR.svg)](https://asciinema.org/a/uf1ak1jM2YwCFA6rdHic4OmXR)
 
 
 ### Hexlet tests and linter status:
