@@ -1,5 +1,5 @@
 Установка игр:
-https://asciinema.org/a/0ReBkgLNikPn6h6QSvCtmmZ32
+```$ git clone git@github.com:VAN4SH/python-project-49.git```  
 
 Brain-even. 
 
