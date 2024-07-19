@@ -1,5 +1,5 @@
-Установка игр:
-```$ git clone git@github.com:VAN4SH/python-project-49.git```  
+## Установка игр
+```git clone git@github.com:VAN4SH/python-project-49.git```  
 
 Brain-even. 
 
