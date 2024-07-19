@@ -7,6 +7,8 @@
 
 4)```make package-install```
 
+[![asciicast](https://asciinema.org/a/0ReBkgLNikPn6h6QSvCtmmZ32.svg)](https://asciinema.org/a/0ReBkgLNikPn6h6QSvCtmmZ32)
+
 ## Игра brain-even
 Нужно ответить "yes" если число четное или "no" если нечетное
 
