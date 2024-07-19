@@ -1,6 +1,8 @@
 ## Установка игр
 ```git clone git@github.com:VAN4SH/python-project-49.git```  
-
+```cd python-project-49```
+```make build```
+```make package-install```
 Brain-even. 
 
 ### Hexlet tests and linter status:
