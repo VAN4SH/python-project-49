@@ -1,11 +1,11 @@
 ## Установка игр
-```git clone git@github.com:VAN4SH/python-project-49.git``` 
+1)```git clone git@github.com:VAN4SH/python-project-49.git``` 
 
-```cd python-project-49```
+2)```cd python-project-49```
 
-```make build```
+3)```make build```
 
-```make package-install```
+4)```make package-install```
 
 
 ### Hexlet tests and linter status:
