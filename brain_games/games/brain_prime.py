@@ -1,28 +1,20 @@
 import random
 
 
-TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+TASK = "Answer 'yes' if given number is prime. Otherwise answer 'no'."
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
 
 
 def generate_question():
-    number = random.randint(0, 30)
-    return number
-
-
-def ask_question(number):
-    print(f'Question: {number}')
-
-
-def is_prime(number):
-    start = 2
-    while number > start:
-        if number % start == 0:
-            break
-        start += 1
-    return number == start
-
-
-def solve(number):
-    if is_prime(number):
-        return 'yes'
-    return 'no'
+    number = random.randint(0, 100)
+    question = number
+    correct_answer = 'yes' if is_prime(number) else 'no'
+    return question, correct_answer
