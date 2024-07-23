@@ -2,7 +2,7 @@ import random
 import math
 
 
-TASK = 'Find the greatest common divisor of given numbers.'
+TASK = "Find the greatest common divisor of given numbers."
 
 
 def generate_question():
@@ -11,5 +11,3 @@ def generate_question():
     question = (number1, number2)
     correct_answer = math.gcd(number1, number2)
     return question, str(correct_answer)
-
-
