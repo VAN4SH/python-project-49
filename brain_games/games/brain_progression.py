@@ -12,5 +12,5 @@ def generate_question():
     missing_index = random.randint(0, length - 1)
     correct_answer = progression[missing_index]
     progression[missing_index] = '..'
-    question = progression
+    question = " ".join(progression)
     return question, correct_answer

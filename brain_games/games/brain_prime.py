@@ -15,6 +15,6 @@ def is_prime(n):
 
 def generate_question():
     number = random.randint(0, 100)
-    question = number
+    question = str(number)
     correct_answer = 'yes' if is_prime(number) else 'no'
     return question, correct_answer

@@ -11,18 +11,7 @@ def welcome_user():
 
 
 def ask_question(question):
-    if isinstance(question, tuple):
-        if len(question) == 2:  # For games like brain-gcd
-            number1, number2 = question
-            print(f"Question: {number1} {number2}")
-        elif len(question) == 3:  # For games like brain-calc
-            number1, operation, number2 = question
-            print(f"Question: {number1} {operation} {number2}")
-    elif isinstance(question, list):
-        progression = " ".join(question)
-        print(f"Question: {progression}")
-    else:
-        print(f"Question: {question}")
+    print(f"Question: {question}")
 
 
 def play(game):
